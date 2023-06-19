@@ -239,13 +239,13 @@ img, svg {
     height: 90vh;
     background:
         -webkit-gradient(linear, left bottom, left top, from(rgba(68, 51, 51, 0.4)), color-stop(80%), to(rgb(110, 100, 100, .7))), 
-        center top / cover url("/Public/Assets/img/Slider1.jpg");
+        center top / cover url("../img/Slider1.jpg");
     background:
         -o-linear-gradient(bottom, rgba(68, 51, 51, 0.4), 80%, rgb(110, 100, 100, .7)), 
-        center top / cover url("/Public/Assets/img/Slider1.jpg");
+        center top / cover url("../img/Slider1.jpg");
     background:
         linear-gradient(to top, rgba(68, 51, 51, 0.4), 80%, rgb(110, 100, 100, .7)), 
-        center top / cover url("/Public/Assets/img/Slider1.jpg");
+        center top / cover url("../img/Slider1.jpg");
 }
 
 .swiper {
@@ -642,11 +642,11 @@ img, svg {
     min-height: 10em;
     z-index: 9999;
     background: -webkit-gradient(linear, left bottom, left top, from(rgba(68, 51, 51, 0.6)), color-stop(80%), to(rgb(110, 100, 100, .6))), 
-                center top / cover url("/Public/Assets/img/banner.jpg");
-    background: -o-linear-gradient(bottom, rgba(68, 51, 51, 0.6), 80%, rgb(110, 100, 100, .6)), 
-                center top / cover url("/Public/Assets/img/banner.jpg");
+                center top / cover url("../img/banner.jpg");
+    background: -o-linear-gradient(bottom, #44333399, 80%, rgb(110, 100, 100, .6)), 
+                center top / cover url("../img/banner.jpg");
     background: linear-gradient(to top, rgba(68, 51, 51, 0.6), 80%, rgb(110, 100, 100, .6)), 
-                center top / cover url("/Public/Assets/img/banner.jpg");
+                center top / cover url("../img/banner.jpg");
 }
 
 .footer .copyright {

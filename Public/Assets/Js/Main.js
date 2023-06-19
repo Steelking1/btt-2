@@ -1,4 +1,4 @@
-import { Menu_mobile, Menu_collant, ScrollSpy, apparitionOnscroll, backtoTop } from "/Public/Assets/Js/Modules/Modules.js";
+import { Menu_mobile, Menu_collant, ScrollSpy, apparitionOnscroll, backtoTop } from "./Modules/Modules.js";
 new Menu_mobile('button-toggle', 'navbar-content').toggle();
 new Menu_collant('scroll-up', 'scroll-down').MenuCollant();
 new ScrollSpy('active', '[data-spy]').go();
