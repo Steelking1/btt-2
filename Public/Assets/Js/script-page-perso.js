@@ -1,5 +1,9 @@
-import { backtoTop } from "/Public/Assets/Js/Modules/Modules.js";
+import { backtoTop, ScrollSpy, apparitionOnscroll } from "./Modules/Modules.js";
 new backtoTop('active', 'back-to-top').go();
+new ScrollSpy('activera', '.main-content > section').go();
+new apparitionOnscroll('reveal').go();
+new apparitionOnscroll('reveal-left').go();
+
 
 function toggleMenu() {
     const navbar = document.querySelector('.navbar');
@@ -60,49 +64,19 @@ function LoginModals() {
             }
         });
         const audio = new Audio();
-        audio.src = '/Public/Assets/audio/zapsplat_multimedia_button_click_004_78081.mp3'
+        audio.src = '../audio/zapsplat_multimedia_button_click_004_78081.mp3';
         audio.play();
     }))
 }
 LoginModals();
 
-function scrollspy() {
-    
-    let section = document.querySelectorAll('.main-content > section');
-    let navLinks = document.querySelectorAll('.navbar__link > a');
-
-    window.onscroll = ()=> {
-        section.forEach(sect => {
-            let top = window.scrollY;
-            let offset = sect.offsetTop + 150;
-            let height = sect.offsetHeight;
-            let id = sect.getAttribute('id');
-
-            if (top >= offset && top < offset + height) {
-                navLinks.forEach(links => {
-                    links.classList.remove('activera');
-                    document.querySelector('.navbar__link > a[href*='+ id +']').classList.add('activera');
-                })
-
-            }
-        });
-}
-
-}
-scrollspy();
-
 const swiper = new Swiper('.swiper', {
     //direction: 'vertical',
     speed: 600,
-    loop: true,
+    //loop: true,
     autoplay: {
-    delay: 4000,
+    delay: 5000,
     disableOnInteraction: true
-    },
-
-    navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
     },
 
     pagination: {
@@ -119,12 +93,12 @@ const swiper = new Swiper('.swiper', {
             spaceBetween: 20
         },
 
-        620: {
+        820: {
             slidesPerView: 2,
             spaceBetween: 20
         },
 
-        820: {
+        1120: {
             slidesPerView: 3,
             spaceBetween: 20
         },
