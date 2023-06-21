@@ -602,8 +602,7 @@ main .second-section .wrap-p p {
 main .second-section .img-aboutUs {
     position: relative;
     top: 12.5em;
-    left: 20%;
-    /* padding: 0 10%; */
+    left: 10%;
     width: 100vw;
     text-align: center;
 }
@@ -614,7 +613,7 @@ main .second-section .img-aboutUs img {
     -webkit-box-shadow: 0 0 .08rem #C89446;
             box-shadow: 0 0 .08rem #C89446;
     height: 20em;
-    width: 35%;
+    width: 50%;
 }
 
 main .second-section .skills {
@@ -664,7 +663,7 @@ main .second-section .swiper {
 main .second-section  .item {
     box-shadow: 0 0 .7em #33333392;
     background: #fff;
-    width: 80%;
+    /* width: 80%; */
     margin: auto;
     padding-bottom: 3%;
     text-align: center;
@@ -1327,19 +1326,19 @@ footer .followUs h3 {
 }
 
 .reveal-loaded .reveal-2 {
+    -webkit-transition-delay: .8s;
+         -o-transition-delay: .8s;
+            transition-delay: .8s;
+}
+
+.reveal-loaded .reveal-3 {
     -webkit-transition-delay: 1s;
          -o-transition-delay: 1s;
             transition-delay: 1s;
 }
 
-.reveal-loaded .reveal-3 {
+.reveal-loaded .reveal-4 {
     -webkit-transition-delay: 1.5s;
          -o-transition-delay: 1.5s;
             transition-delay: 1.5s;
-}
-
-.reveal-loaded .reveal-4 {
-    -webkit-transition-delay: 2s;
-         -o-transition-delay: 2s;
-            transition-delay: 2s;
 }  

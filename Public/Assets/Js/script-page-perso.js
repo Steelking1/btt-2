@@ -72,7 +72,7 @@ LoginModals();
 
 const swiper = new Swiper('.swiper', {
     //direction: 'vertical',
-    speed: 600,
+    //speed: 600,
     //loop: true,
     autoplay: {
     delay: 5000,
@@ -85,7 +85,8 @@ const swiper = new Swiper('.swiper', {
         clickable: true
       },
 
-    slidesPerView: 'auto',
+    slidesPerView: 1,
+    spaceBetween: 15,
 
     breakpoints: {
         420: {
