@@ -673,6 +673,7 @@ main .second-section  .item {
     background: #fff;
     margin: auto;
     padding-bottom: 3%;
+    border-radius: 5%;
     text-align: center;
     transition: transform .2s;
 }
@@ -1026,15 +1027,16 @@ main .fifth-section form select {
 
 main .fifth-section form textarea {
     width: 98%;
-    height: -webkit-max-content;
-    height: -moz-max-content;
-    height: max-content;
+    min-height: -webkit-max-content;
+    min-height: -moz-max-content;
+    min-height: 5em;
     border: none;
     border-bottom: solid .2em #ddd;
     resize: none;
     border-radius: 0;
     border-radius: 0;
     background: transparent;
+    resize: vertical;
 }
 
 main .fifth-section form input[type="submit"] {
