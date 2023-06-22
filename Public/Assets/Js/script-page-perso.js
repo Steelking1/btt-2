@@ -21,12 +21,6 @@ function toggleMenu() {
         }
     )
 })
-    //bloquer le scroll
-    window.addEventListener('scroll', ()=> {
-        if ( navbar.className === 'navbar dark-mode show-nav' ) {
-            window.scrollTo(0,0)
-        }
-    })
 }
 toggleMenu();
 
