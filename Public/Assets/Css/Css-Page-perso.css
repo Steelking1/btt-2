@@ -140,7 +140,7 @@ header {
 }
 
 .main-content {
-    padding: 1rem;
+    padding: 1rem 0;
 }
 
 /* Navbar */
@@ -355,6 +355,10 @@ main section .titr {
     letter-spacing: .01em;
 }
 
+main section:not(.first-section) {
+    user-select: none;
+}
+
 main .first-section {
     color: aliceblue;
     min-height: 60vh;
@@ -476,9 +480,12 @@ main .fix-first-section {
     padding: 0;
     padding-top: 5%;
     background: lightgray;
+    background: #c4b8b8;
+    background: linear-gradient(to bottom, #fff, lightgray);
 }
 
 main .fix-first-section > a h1 {
+    display: block;
     font-size: 1.3em;
     border: solid .01em #ddd;
     background: #C89446;
@@ -551,7 +558,7 @@ main .fix-first-section > a h1:hover {
 /* 2ème section  */
 
 main .second-section {
-    padding: 2% 0;
+    padding: 2% 1rem;
     font-size: 1.01em;
     margin-bottom: 5%;
     background: #fff;
@@ -641,6 +648,7 @@ main .second-section .skills > p {
 
 .swiper {
     overflow: initial;
+    margin-bottom: 5%;
 }
 
 main .second-section .swiper {
@@ -661,9 +669,8 @@ main .second-section .swiper {
 
 
 main .second-section  .item {
-    box-shadow: 0 0 .7em #33333392;
+    box-shadow: 0 0 .5em #33333392;
     background: #fff;
-    /* width: 80%; */
     margin: auto;
     padding-bottom: 3%;
     text-align: center;
@@ -709,6 +716,7 @@ main .second-section  .item {
 }
 
 main .second-section .btn-get-collaborate {
+    display: block;
     text-align: center;
     border: solid transparent 1px;
     background: #C89446;
